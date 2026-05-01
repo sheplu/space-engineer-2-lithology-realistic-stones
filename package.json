@@ -1,0 +1,18 @@
+{
+  "name": "space-engineer-2-lithology-realistic-stones",
+  "version": "0.1.0",
+  "description": "Lithology: Realistic Stones — a Space Engineers 2 mod dataset that replaces generic stone with distinct rock types, each yielding a realistic mix of base-game raw resources.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "check": "npm run validate"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  }
+}

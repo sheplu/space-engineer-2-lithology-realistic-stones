@@ -1,0 +1,345 @@
+{
+  "version": "0.2.0",
+  "generatedAt": "2026-05-01",
+  "game": {
+    "name": "Space Engineers 2",
+    "stage": "Early Access",
+    "dataAsOf": "2026-05-01"
+  },
+  "mod": {
+    "name": "Lithology: Realistic Stones",
+    "version": "0.2.0",
+    "baseGameDataVersion": "1.1.0"
+  },
+  "sources": [
+    "https://en.wikipedia.org/wiki/List_of_rock_types"
+  ],
+  "notes": "Replaces the base-game generic stone with distinct rock types, grouped by geological family (igneous, sedimentary, metamorphic). Each stone's `composition` lists the fraction of base-game raw resources yielded per unit when processed. Percentages sum to 1.0. Primary yields are rock-forming elements (silicon, magnesium, iron) plus common metals (copper, nickel in mafic rocks). Rare metals (uranium, lead, gold, silver, platinum, chromium, cobalt, titanium) appear only as geologically justified ultra-traces (0.001–0.005) — enough to reward high-volume quarry-style gameplay without displacing Mineralogy's ore-prospecting loop. Location data is deferred — see dataGaps on each record.",
+  "resources": [
+    {
+      "id": "granite",
+      "displayName": "Granite",
+      "family": "igneous",
+      "type": "stone",
+      "mass_kg": 1,
+      "volume_liters": null,
+      "stackable": true,
+      "divisible": true,
+      "description": "Coarse-grained intrusive igneous rock, quartz- and feldspar-rich. Abundant in continental crust. Trace lead and uranium reflect granite's real-world enrichment in incompatible elements.",
+      "gameStatus": "active",
+      "locations": { "planets": [], "asteroidFields": [] },
+      "composition": [
+        { "resourceId": "silicon", "percentage": 0.15 },
+        { "resourceId": "lead", "percentage": 0.003 },
+        { "resourceId": "uranium", "percentage": 0.002 },
+        { "resourceId": "stone", "percentage": 0.845 }
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Granite",
+      "dataGaps": ["volume_liters", "locations"]
+    },
+    {
+      "id": "basalt",
+      "displayName": "Basalt",
+      "family": "igneous",
+      "type": "stone",
+      "mass_kg": 1,
+      "volume_liters": null,
+      "stackable": true,
+      "divisible": true,
+      "description": "Fine-grained mafic volcanic rock. Common in oceanic crust and volcanic biomes; carries modest iron and magnesium, plus trace copper and nickel. Titanium and cobalt appear as ultra-traces typical of mafic chemistry.",
+      "gameStatus": "active",
+      "locations": { "planets": [], "asteroidFields": [] },
+      "composition": [
+        { "resourceId": "silicon", "percentage": 0.10 },
+        { "resourceId": "magnesium", "percentage": 0.05 },
+        { "resourceId": "iron", "percentage": 0.05 },
+        { "resourceId": "copper", "percentage": 0.02 },
+        { "resourceId": "nickel", "percentage": 0.02 },
+        { "resourceId": "titanium", "percentage": 0.004 },
+        { "resourceId": "cobalt", "percentage": 0.002 },
+        { "resourceId": "stone", "percentage": 0.754 }
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Basalt",
+      "dataGaps": ["volume_liters", "locations"]
+    },
+    {
+      "id": "peridotite",
+      "displayName": "Peridotite",
+      "family": "igneous",
+      "type": "stone",
+      "mass_kg": 1,
+      "volume_liters": null,
+      "stackable": true,
+      "divisible": true,
+      "description": "Ultramafic intrusive rock, dominated by olivine and pyroxene. Primary host for nickel sulfide deposits; rarer and deeper than basalt. Ultra-trace chromium, cobalt, and platinum reflect ultramafic affinity for chromite and platinum-group elements.",
+      "gameStatus": "active",
+      "locations": { "planets": [], "asteroidFields": [] },
+      "composition": [
+        { "resourceId": "magnesium", "percentage": 0.08 },
+        { "resourceId": "iron", "percentage": 0.05 },
+        { "resourceId": "nickel", "percentage": 0.03 },
+        { "resourceId": "copper", "percentage": 0.01 },
+        { "resourceId": "chromium", "percentage": 0.005 },
+        { "resourceId": "cobalt", "percentage": 0.003 },
+        { "resourceId": "platinum", "percentage": 0.002 },
+        { "resourceId": "stone", "percentage": 0.82 }
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Peridotite",
+      "dataGaps": ["volume_liters", "locations"]
+    },
+    {
+      "id": "gabbro",
+      "displayName": "Gabbro",
+      "family": "igneous",
+      "type": "stone",
+      "mass_kg": 1,
+      "volume_liters": null,
+      "stackable": true,
+      "divisible": true,
+      "description": "Coarse-grained mafic intrusive rock — basalt's plutonic equivalent. Similar trace metal profile, typically found deeper in the crust. Titanium and cobalt ultra-traces mirror basalt's mafic chemistry.",
+      "gameStatus": "active",
+      "locations": { "planets": [], "asteroidFields": [] },
+      "composition": [
+        { "resourceId": "silicon", "percentage": 0.08 },
+        { "resourceId": "magnesium", "percentage": 0.06 },
+        { "resourceId": "iron", "percentage": 0.06 },
+        { "resourceId": "copper", "percentage": 0.015 },
+        { "resourceId": "nickel", "percentage": 0.015 },
+        { "resourceId": "titanium", "percentage": 0.003 },
+        { "resourceId": "cobalt", "percentage": 0.002 },
+        { "resourceId": "stone", "percentage": 0.765 }
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Gabbro",
+      "dataGaps": ["volume_liters", "locations"]
+    },
+    {
+      "id": "obsidian",
+      "displayName": "Obsidian",
+      "family": "igneous",
+      "type": "stone",
+      "mass_kg": 1,
+      "volume_liters": null,
+      "stackable": true,
+      "divisible": true,
+      "description": "Volcanic glass formed from rapidly cooled felsic lava. High silica content, brittle, found near volcanic features. Trace lead reflects felsic incompatible-element enrichment.",
+      "gameStatus": "active",
+      "locations": { "planets": [], "asteroidFields": [] },
+      "composition": [
+        { "resourceId": "silicon", "percentage": 0.20 },
+        { "resourceId": "lead", "percentage": 0.001 },
+        { "resourceId": "stone", "percentage": 0.799 }
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Obsidian",
+      "dataGaps": ["volume_liters", "locations"]
+    },
+    {
+      "id": "limestone",
+      "displayName": "Limestone",
+      "family": "sedimentary",
+      "type": "stone",
+      "mass_kg": 1,
+      "volume_liters": null,
+      "stackable": true,
+      "divisible": true,
+      "description": "Sedimentary carbonate rock (CaCO3 with Mg impurities). Soft, easily mined, widespread. Trace lead reflects Mississippi-Valley-type lead-zinc mineralization common in carbonate hosts.",
+      "gameStatus": "active",
+      "locations": { "planets": [], "asteroidFields": [] },
+      "composition": [
+        { "resourceId": "magnesium", "percentage": 0.08 },
+        { "resourceId": "lead", "percentage": 0.002 },
+        { "resourceId": "stone", "percentage": 0.918 }
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Limestone",
+      "dataGaps": ["volume_liters", "locations"]
+    },
+    {
+      "id": "sandstone",
+      "displayName": "Sandstone",
+      "family": "sedimentary",
+      "type": "stone",
+      "mass_kg": 1,
+      "volume_liters": null,
+      "stackable": true,
+      "divisible": true,
+      "description": "Clastic sedimentary rock of cemented sand-sized quartz grains. Abundant, easy to mine. Ultra-trace uranium and titanium reflect sandstone-hosted uranium deposits and heavy-mineral sand placers.",
+      "gameStatus": "active",
+      "locations": { "planets": [], "asteroidFields": [] },
+      "composition": [
+        { "resourceId": "silicon", "percentage": 0.12 },
+        { "resourceId": "uranium", "percentage": 0.003 },
+        { "resourceId": "titanium", "percentage": 0.002 },
+        { "resourceId": "stone", "percentage": 0.875 }
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Sandstone",
+      "dataGaps": ["volume_liters", "locations"]
+    },
+    {
+      "id": "shale",
+      "displayName": "Shale",
+      "family": "sedimentary",
+      "type": "stone",
+      "mass_kg": 1,
+      "volume_liters": null,
+      "stackable": true,
+      "divisible": true,
+      "description": "Fine-grained sedimentary rock formed from compacted mud. Fissile, iron-tinged. Black shales are a major real-world host for uranium, with trace lead and silver also typical.",
+      "gameStatus": "active",
+      "locations": { "planets": [], "asteroidFields": [] },
+      "composition": [
+        { "resourceId": "iron", "percentage": 0.05 },
+        { "resourceId": "uranium", "percentage": 0.004 },
+        { "resourceId": "lead", "percentage": 0.002 },
+        { "resourceId": "silver", "percentage": 0.001 },
+        { "resourceId": "stone", "percentage": 0.943 }
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Shale",
+      "dataGaps": ["volume_liters", "locations"]
+    },
+    {
+      "id": "chalk",
+      "displayName": "Chalk",
+      "family": "sedimentary",
+      "type": "stone",
+      "mass_kg": 1,
+      "volume_liters": null,
+      "stackable": true,
+      "divisible": true,
+      "description": "Soft, porous carbonate rock formed from microfossils. Very easy to mine, pure filler.",
+      "gameStatus": "active",
+      "locations": { "planets": [], "asteroidFields": [] },
+      "composition": [
+        { "resourceId": "stone", "percentage": 1 }
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Chalk",
+      "dataGaps": ["volume_liters", "locations"]
+    },
+    {
+      "id": "conglomerate",
+      "displayName": "Conglomerate",
+      "family": "sedimentary",
+      "type": "stone",
+      "mass_kg": 1,
+      "volume_liters": null,
+      "stackable": true,
+      "divisible": true,
+      "description": "Clastic rock of cemented pebbles and gravel. Heterogeneous composition reflecting its varied source material. Trace gold and uranium reflect paleoplacer deposits like the Witwatersrand gold reefs.",
+      "gameStatus": "active",
+      "locations": { "planets": [], "asteroidFields": [] },
+      "composition": [
+        { "resourceId": "silicon", "percentage": 0.05 },
+        { "resourceId": "iron", "percentage": 0.02 },
+        { "resourceId": "gold", "percentage": 0.002 },
+        { "resourceId": "uranium", "percentage": 0.002 },
+        { "resourceId": "stone", "percentage": 0.926 }
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Conglomerate_(geology)",
+      "dataGaps": ["volume_liters", "locations"]
+    },
+    {
+      "id": "marble",
+      "displayName": "Marble",
+      "family": "metamorphic",
+      "type": "stone",
+      "mass_kg": 1,
+      "volume_liters": null,
+      "stackable": true,
+      "divisible": true,
+      "description": "Metamorphosed limestone. Dense, decorative, yields magnesium from carbonate impurities. Trace lead inherited from the original carbonate protolith.",
+      "gameStatus": "active",
+      "locations": { "planets": [], "asteroidFields": [] },
+      "composition": [
+        { "resourceId": "magnesium", "percentage": 0.10 },
+        { "resourceId": "lead", "percentage": 0.002 },
+        { "resourceId": "stone", "percentage": 0.898 }
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Marble",
+      "dataGaps": ["volume_liters", "locations"]
+    },
+    {
+      "id": "slate",
+      "displayName": "Slate",
+      "family": "metamorphic",
+      "type": "stone",
+      "mass_kg": 1,
+      "volume_liters": null,
+      "stackable": true,
+      "divisible": true,
+      "description": "Low-grade metamorphic rock derived from shale. Splits into flat layers; trace iron. Trace uranium and lead inherited from the shale protolith.",
+      "gameStatus": "active",
+      "locations": { "planets": [], "asteroidFields": [] },
+      "composition": [
+        { "resourceId": "iron", "percentage": 0.03 },
+        { "resourceId": "uranium", "percentage": 0.003 },
+        { "resourceId": "lead", "percentage": 0.001 },
+        { "resourceId": "stone", "percentage": 0.966 }
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Slate",
+      "dataGaps": ["volume_liters", "locations"]
+    },
+    {
+      "id": "gneiss",
+      "displayName": "Gneiss",
+      "family": "metamorphic",
+      "type": "stone",
+      "mass_kg": 1,
+      "volume_liters": null,
+      "stackable": true,
+      "divisible": true,
+      "description": "High-grade metamorphic rock with banded quartz-feldspar-mica texture. Yields silicon and trace iron. Ultra-trace uranium and lead typical of deep continental crust.",
+      "gameStatus": "active",
+      "locations": { "planets": [], "asteroidFields": [] },
+      "composition": [
+        { "resourceId": "silicon", "percentage": 0.08 },
+        { "resourceId": "iron", "percentage": 0.02 },
+        { "resourceId": "uranium", "percentage": 0.002 },
+        { "resourceId": "lead", "percentage": 0.001 },
+        { "resourceId": "stone", "percentage": 0.897 }
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Gneiss",
+      "dataGaps": ["volume_liters", "locations"]
+    },
+    {
+      "id": "quartzite",
+      "displayName": "Quartzite",
+      "family": "metamorphic",
+      "type": "stone",
+      "mass_kg": 1,
+      "volume_liters": null,
+      "stackable": true,
+      "divisible": true,
+      "description": "Metamorphosed sandstone, nearly pure quartz. Highest silicon yield of any rock type. Ultra-trace titanium and gold inherited from auriferous sandstone protoliths and heavy-mineral sands.",
+      "gameStatus": "active",
+      "locations": { "planets": [], "asteroidFields": [] },
+      "composition": [
+        { "resourceId": "silicon", "percentage": 0.25 },
+        { "resourceId": "titanium", "percentage": 0.002 },
+        { "resourceId": "gold", "percentage": 0.001 },
+        { "resourceId": "stone", "percentage": 0.747 }
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Quartzite",
+      "dataGaps": ["volume_liters", "locations"]
+    },
+    {
+      "id": "schist",
+      "displayName": "Schist",
+      "family": "metamorphic",
+      "type": "stone",
+      "mass_kg": 1,
+      "volume_liters": null,
+      "stackable": true,
+      "divisible": true,
+      "description": "Mid-grade metamorphic rock with a foliated, mica-rich texture. Yields modest silicon and iron. Trace cobalt and silver occur in metasedimentary schist belts worldwide.",
+      "gameStatus": "active",
+      "locations": { "planets": [], "asteroidFields": [] },
+      "composition": [
+        { "resourceId": "silicon", "percentage": 0.05 },
+        { "resourceId": "iron", "percentage": 0.05 },
+        { "resourceId": "cobalt", "percentage": 0.002 },
+        { "resourceId": "silver", "percentage": 0.001 },
+        { "resourceId": "stone", "percentage": 0.897 }
+      ],
+      "wiki": "https://en.wikipedia.org/wiki/Schist",
+      "dataGaps": ["volume_liters", "locations"]
+    }
+  ]
+}
