@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "generatedAt": "2026-05-01",
+  "game": {
+    "name": "Space Engineers 2",
+    "stage": "Early Access",
+    "dataAsOf": "2026-05-01"
+  },
+  "mod": {
+    "name": "Lithology: Realistic Stones",
+    "version": "0.2.0"
+  },
+  "notes": "Machine-readable index of every dataset in this mod. Paths are repo-relative — prepend the raw-content URL to fetch.",
+  "totalEntries": 15,
+  "datasets": [
+    {
+      "id": "stones",
+      "path": "data/stones.json",
+      "category": "resources",
+      "subcategory": "stones",
+      "description": "Distinct rock types replacing the base-game generic stone. Each records a composition breakdown across base-game raw resources.",
+      "version": "0.2.0",
+      "entryCount": 15
+    }
+  ]
+}
